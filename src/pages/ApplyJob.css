@@ -1,0 +1,487 @@
+/* =========================================================
+   APPLY JOB PAGE
+   ========================================================= */
+
+.apply-job-page {
+  min-height: 100vh;
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.apply-job-header {
+  padding: 70px 7%;
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(37, 99, 235, 0.14),
+      transparent 45%
+    ),
+    #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.apply-job-container {
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.apply-job-header h1 {
+  margin: 0;
+  font-size: clamp(38px, 5vw, 58px);
+  line-height: 1.05;
+  letter-spacing: -2px;
+  font-weight: 800;
+}
+
+.apply-job-header p {
+  margin: 14px 0 0;
+  color: #64748b;
+  font-size: 15px;
+}
+
+/* =========================================================
+   MAIN LAYOUT
+   ========================================================= */
+
+.apply-job-section {
+  padding: 70px 7% 100px;
+}
+
+.apply-job-layout {
+  width: min(1200px, 100%);
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 340px;
+  gap: 28px;
+  align-items: start;
+}
+
+/* =========================================================
+   FORM CARD
+   ========================================================= */
+
+.application-form-card {
+  padding: 34px;
+
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+
+  box-shadow: 0 10px 35px rgba(15, 23, 42, 0.05);
+}
+
+.application-section-header {
+  margin-bottom: 34px;
+}
+
+.application-section-header h2 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.application-section-header p {
+  margin: 10px 0 0;
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* =========================================================
+   FORM SECTIONS
+   ========================================================= */
+
+.application-form-section {
+  padding: 28px 0;
+  border-top: 1px solid #e2e8f0;
+}
+
+.application-form-section:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+
+.application-form-section h3 {
+  margin: 0 0 20px;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.application-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.application-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.application-field label {
+  color: #334155;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.application-field input,
+.application-field select,
+.application-field textarea {
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  background: #f8fafc;
+  color: #0f172a;
+  font-size: 14px;
+  outline: none;
+
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.application-field input,
+.application-field select {
+  height: 50px;
+  padding: 0 14px;
+}
+
+.application-field textarea {
+  padding: 14px;
+  resize: vertical;
+  min-height: 160px;
+  line-height: 1.6;
+}
+
+.application-field input::placeholder,
+.application-field textarea::placeholder {
+  color: #94a3b8;
+}
+
+.application-field input:hover,
+.application-field select:hover,
+.application-field textarea:hover {
+  background: #ffffff;
+}
+
+.application-field input:focus,
+.application-field select:focus,
+.application-field textarea:focus {
+  border-color: #2563eb;
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+}
+
+/* =========================================================
+   RESUME UPLOAD
+   ========================================================= */
+
+.resume-upload-box {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  padding: 24px;
+
+  border: 1px dashed #93c5fd;
+  border-radius: 16px;
+
+  background: #eff6ff;
+}
+
+.resume-upload-icon {
+  width: 58px;
+  height: 58px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 14px;
+  background: #ffffff;
+
+  font-size: 25px;
+}
+
+.resume-upload-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.resume-upload-content h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.resume-upload-content p {
+  margin: 6px 0 14px;
+  color: #64748b;
+  font-size: 12px;
+}
+
+.resume-upload-content input {
+  display: none;
+}
+
+.resume-upload-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 40px;
+  padding: 0 16px;
+
+  border-radius: 9px;
+  background: #2563eb;
+  color: #ffffff;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.resume-upload-button:hover {
+  background: #1d4ed8;
+}
+
+/* =========================================================
+   TERMS
+   ========================================================= */
+
+.application-terms {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+
+  margin-top: 28px;
+
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.application-terms input {
+  width: 16px;
+  height: 16px;
+  margin-top: 2px;
+  accent-color: #2563eb;
+  flex-shrink: 0;
+}
+
+/* =========================================================
+   SUBMIT
+   ========================================================= */
+
+.submit-application-button {
+  width: 100%;
+  height: 52px;
+
+  margin-top: 24px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #2563eb;
+  color: #ffffff;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.submit-application-button:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+  box-shadow: 0 10px 22px rgba(37, 99, 235, 0.2);
+}
+
+/* =========================================================
+   SIDEBAR
+   ========================================================= */
+
+.application-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  position: sticky;
+  top: 100px;
+}
+
+.application-summary-card,
+.application-tips-card {
+  padding: 26px;
+
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+
+  box-shadow: 0 8px 30px rgba(15, 23, 42, 0.04);
+}
+
+.application-company-logo {
+  width: 64px;
+  height: 64px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 16px;
+
+  border-radius: 16px;
+
+  background: #eff6ff;
+  border: 1px solid #dbeafe;
+
+  color: #2563eb;
+
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.application-company {
+  color: #64748b;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.application-summary-card h2 {
+  margin: 8px 0 0;
+  font-size: 22px;
+  line-height: 1.35;
+  font-weight: 800;
+}
+
+.application-summary-card > p {
+  margin: 10px 0 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.application-summary-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.application-summary-meta span {
+  padding: 7px 10px;
+  border-radius: 8px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  color: #475569;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.application-tips-card h3 {
+  margin: 0 0 16px;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.application-tips-card ul {
+  margin: 0;
+  padding-left: 18px;
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.application-tips-card li {
+  margin-bottom: 8px;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1000px) {
+  .apply-job-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .application-sidebar {
+    position: static;
+    order: -1;
+  }
+}
+
+@media (max-width: 700px) {
+  .apply-job-header {
+    padding: 55px 20px;
+  }
+
+  .apply-job-section {
+    padding: 50px 20px 70px;
+  }
+
+  .application-form-card {
+    padding: 24px 20px;
+  }
+
+  .application-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .resume-upload-box {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+/* =========================================================
+   FORM VALIDATION & SUCCESS
+   ========================================================= */
+
+.field-error {
+  display: block;
+  margin-top: 5px;
+  color: #dc2626;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.terms-error {
+  margin-top: 8px;
+}
+
+.application-success-message {
+  width: min(1200px, calc(100% - 40px));
+  margin: 30px auto 0;
+  padding: 18px 22px;
+  border: 1px solid #86efac;
+  border-radius: 12px;
+  background: #f0fdf4;
+  color: #166534;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.application-success-message strong {
+  font-size: 15px;
+}
+
+.application-success-message span {
+  font-size: 13px;
+}
